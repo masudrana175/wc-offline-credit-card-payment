@@ -1,0 +1,33 @@
+1.2
+======================
+WC Order issue solved on latest woocommerce version.
+
+1.4
+=====================
+jQuery real time validation
+Enable Disable Option
+Credit cart fetching dynamically
+Delete Credit card option
+
+1.5
+=====================
+Now set decrption credit card password by administor on it's profile page
+
+
+1.6   |    15-10-2016
+======================
+	i) Uppercase validation removed.  If you get validation so only need remove comment on line no 234 in class-offline-credit-card-payment.php
+	ii) Added option for set default order status
+	iii) Credit card icons added on bottom of corner in payment gateway screen
+	iv) generate_iv resolved paramiter issue
+	V) Resolved fetal error issue on admin credit card metabox inside order details page.
+	vi) Shop manager is only use password, but not set descrypt password. Decrypt password set only admin user.
+
+
+
+1.7   |    23-01-2018
+======================
+	i) Remove extra paramiter on checkcreditcard function
+	ii)  base64 decode remove and added strong encryption for password
+	iii) Replaced get_payment_method to get_post_meta
+	iv) get_id() replaced to ID
