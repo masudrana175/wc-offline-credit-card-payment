@@ -597,7 +597,7 @@ class WooOffline_Payment_Gateway_Init extends WC_Payment_Gateway
 			for ($i = strlen($cardNo) - 1; $i >= 0; $i--) {
 			
 			  // Extract the next digit and multiply by 1 or 2 on alternative digits.      
-			  $calc = $cardNo{$i} * $j;
+			  $calc = $cardNo[$i] * $j;
 			
 			  // If the result is in two digits add 1 to the checksum total
 			  if ($calc > 9) {
