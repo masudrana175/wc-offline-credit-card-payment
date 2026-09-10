@@ -1,0 +1,140 @@
+/* WC Print Cart — designer UI */
+
+.wcpc-designer {
+	margin: 0 0 1.25em;
+	padding: 1em;
+	border: 1px solid #e2e2e2;
+	border-radius: 8px;
+	background: #fafafa;
+}
+
+.wcpc-upload-row {
+	margin-bottom: 0.75em;
+}
+
+.wcpc-upload-btn {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.wcpc-upload-btn input[type="file"] {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
+
+.wcpc-upload-hint {
+	margin: 0.5em 0 0;
+	font-size: 0.85em;
+	color: #666;
+}
+
+.wcpc-progress {
+	margin-top: 0.5em;
+	height: 6px;
+	border-radius: 3px;
+	background: #e0e0e0;
+	overflow: hidden;
+}
+
+.wcpc-progress-bar {
+	height: 100%;
+	width: 0;
+	background: #4caf50;
+	transition: width 0.15s ease;
+}
+
+.wcpc-canvas-wrap {
+	position: relative;
+	line-height: 0;
+	border-radius: 6px;
+	overflow: hidden;
+	background: #222;
+}
+
+#wcpc-canvas {
+	display: block;
+	touch-action: none;
+	cursor: grab;
+}
+
+#wcpc-canvas:active {
+	cursor: grabbing;
+}
+
+.wcpc-dpi {
+	position: absolute;
+	left: 8px;
+	bottom: 8px;
+	padding: 3px 10px;
+	border-radius: 12px;
+	font-size: 12px;
+	line-height: 1.6;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.65);
+}
+
+.wcpc-dpi-good { background: rgba(46, 125, 50, 0.9); }
+.wcpc-dpi-ok   { background: rgba(230, 145, 20, 0.9); }
+.wcpc-dpi-low  { background: rgba(198, 40, 40, 0.9); }
+
+.wcpc-toolbar {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	margin-top: 0.6em;
+}
+
+.wcpc-toolbar input[type="range"] {
+	flex: 1;
+	min-width: 100px;
+}
+
+.wcpc-btn {
+	min-width: 2.4em;
+	padding: 0.25em 0.5em !important;
+	font-size: 1.1em;
+	line-height: 1.4;
+}
+
+.wcpc-options {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	margin-top: 1em;
+}
+
+.wcpc-field {
+	flex: 1 1 180px;
+	margin: 0 !important;
+}
+
+.wcpc-field label {
+	display: block;
+	margin-bottom: 0.25em;
+	font-weight: 600;
+}
+
+.wcpc-field select {
+	width: 100%;
+}
+
+.wcpc-price {
+	margin: 0.9em 0 0 !important;
+	font-size: 1.25em;
+	font-weight: 700;
+}
+
+@media (max-width: 480px) {
+	.wcpc-designer {
+		padding: 0.75em;
+	}
+	.wcpc-options {
+		flex-direction: column;
+		gap: 0.6em;
+	}
+}
